@@ -24,8 +24,8 @@
     </LinearLayout>
 
     <fragment
-        android:id="@+id/framentMovelist"
+        android:id="@+id/frament_movelist"
+        android:name="com.abd.zaher88.androidmoviedb.layout.MovieList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/fragment_movie_list" />
+        android:layout_height="match_parent" />
 </RelativeLayout>

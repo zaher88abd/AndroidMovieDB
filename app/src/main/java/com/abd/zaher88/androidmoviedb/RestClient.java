@@ -8,8 +8,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Zaher on 02/05/2016.
  */
 public class RestClient {
-    private static final String BASE_URL = "https://api.themoviedb.org/3";
-    private static MovieDBInterface movieService;
+    private static final String BASE_URL = "http://api.themoviedb.org/3/";
+    private  MovieDBInterface movieService;
 
 
     public RestClient() {
@@ -24,7 +24,7 @@ public class RestClient {
         movieService = retrofit.create(MovieDBInterface.class);
     }
 
-    public static MovieDBInterface getApiService() {
+    public MovieDBInterface getApiService() {
         return movieService;
     }
 }
